@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset=utf-8>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <title>TAB_mk 🍑</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+  <link rel="stylesheet" href="./style.css">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date();
+      for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+      k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(94733526, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/94733526" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+  <div id="terminal">
+    <div class="terminal-window">
+      <div class="terminal-bar">
+        <div class="text-left">
+          <div class="circle circle-red"></div>
+          <div class="circle circle-orange"></div>
+          <div class="circle circle-green"></div>
+        </div>
+      </div>
+
+      <div class="terminal-tabs">
+        <div class="tab" id="home-tab" onclick="openTab('home')" style="background: #2D2B30;">~/home — <span
+            class="zsh">-zsh</span></div>
+        <div class="tab" id="cv-tab" onclick="openTab('cv')" style="background: #151515;">~/cv — <span
+            class="zsh">-zsh</span></div>
+        <div class="tab" id="portfolio-tab" onclick="openTab('portfolio')" style="background: #151515;">~/projects —
+          <span class="zsh">-zsh</span>
+        </div>
+      </div>
+      <div class="terminal-body">
+        <div class="pages" id="home-page">
+          <center><span class="command">TAB_mk 🍑</span></center>
+          <center style="height: 25px"> <span class="command"></span> <span class="command" id="print">:)</span>
+          </center>
+          <br>
+          <span style="margin-left: 20px;text-decoration: underline;">Contacts</span>
+          <span style="float: right;margin-right: 20px;text-decoration: underline;">Job</span>
+          <br>
+          <span class="command"><i class="fab fa-telegram-plane"></i> Telegram > <a
+              href="https://t.me/tab_mk">@TAB_mk</a></span>
+          <span class="command rt"><span class="link" onclick="openTab('cv')">Open</span>
+            < CV <i class="fas fa-file-alt"></i>
+          </span>
+          <br>
+          <span class="command"><i class="fab fa-discord"></i> Discord > <span
+              style="color:#9e3f9e">tab_mk</span></span>
+          <span class="command rt"><span class="link" onclick="openTab('portfolio')">Open</span>
+            < Portfolio <i class="fas fa-th-large"></i>
+          </span>
+          <br>
+          <span class="command"><i class="fas fa-at"></i> E-mail > <span style="color:#9e3f9e">tabmk.contact<span
+                style="color:#b781b7">[at]</span>gmail.com</span></span>
+          <span class="command rt"><a href="http://github.com/TABmk">@TABmk</a>
+            < GitHub <i class="fab fa-github"></i>
+          </span>
+        </div>
+
+        <div class="pages grey" id="cv-page" hidden>
+          // reconstruction
+        </div>
+
+        <div class="pages grey" id="portfolio-page" hidden>
+          // reconstruction
+        </div>
+
+        <span class="command" id="perm" hidden>bash: ./hack.sh: Operation not permitted
+          <br>
+        </span>
+        <span class="command">root@tab.mk:~# <span id="input"></span> </span>
+        <span class="cursor"></span>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="./index.js"></script>
+</body>
